@@ -74,7 +74,7 @@ public class Task5 {
      * Располагайте медианы по возрастанию.
      */
     static double[] getMedians(double a, double b, double c) {
-        if (isTriangleExist(a, b, c)) {
+        if (!isTriangleExist(a, b, c)) {
             return null;
         }
         final double powA = Math.pow(a, 2),
