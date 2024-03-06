@@ -31,10 +31,10 @@ public class Task6 {
     }
 
     static int getNodByEuclideanAlgorithm(int m, int n) {
-        if (m%n == 0) {
+        if (m % n == 0) {
             return Math.min(m, n);
         }
 
-        return getNodByEuclideanAlgorithm(n, m%n);
+        return getNodByEuclideanAlgorithm(n, m % n);
     }
 }
