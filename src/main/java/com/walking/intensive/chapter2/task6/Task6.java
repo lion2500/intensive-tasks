@@ -27,16 +27,7 @@ public class Task6 {
     }
 
     static int getNod(int m, int n) {
-        int ceiling = Math.min(m, n),
-                nod = 0;
-
-        for (int i = 1; i <= ceiling; i++) {
-            if (m % i == 0 && n % i == 0) {
-                nod = i;
-            }
-        }
-
-        return nod;
+        return n == 0 ? m : getNod(n, m % n);
     }
 
     static int getNodByEuclideanAlgorithm(int m, int n) {
