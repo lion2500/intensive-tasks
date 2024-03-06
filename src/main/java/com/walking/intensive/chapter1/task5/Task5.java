@@ -160,6 +160,6 @@ public class Task5 {
     }
 
     static boolean isTriangleExist(double a, double b, double c) {
-        return ((a > 0 && b > 0 && c > 0) && (a + b > c && a + c > b && b + c > a) && (Math.abs(a - b) < c && Math.abs(a - c) < b && Math.abs(b - c) < a));
+        return ((a > 0 && b > 0 && c > 0) && (a + b > c && a + c > b && b + c > a));
     }
 }
